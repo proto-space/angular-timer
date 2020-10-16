@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { from, Observable, of, Subject,  } from 'rxjs';
-import { combineAll, exhaustMap, map, startWith, toArray, mergeMap } from 'rxjs/operators';
+import { combineAll, exhaustMap, map, startWith, toArray, mergeMap, filter } from 'rxjs/operators';
 import { Timer } from '../interfaces/timer';
 import { StorageService } from './storage.service';
 
@@ -25,15 +25,40 @@ export class TimerService {
 
   public ensureTimer(): Observable<Set<Timer>> {
     if (!this.timer) {
-      try {
-        const timers = this.storageService.get(TimerService.TIMER_STORAGE_KEY) as Timer[];
-        timers.forEach(timer => {
+      return this.loadTimer();
+    }
+    return of(this.timer);
+  }
+
+  public loadTimer(): Observable<Set<Timer>> {
+    try {
+      const now = Date.now();
+      const timers = this.storageService.get(TimerService.TIMER_STORAGE_KEY) as Timer[];
+    
+      return from(timers).pipe(
+        startWith({
+          description: "Wichtiges TODO",
+          endDate: (function() {
+            const date = new Date();
+            date.setDate(date.getDate() + 1);
+            return date;
+          })()
+        }),
+        map(timer => {
           timer.endDate = new Date(timer.endDate);
+          return timer;
+        }),
+        filter(timer => {
+          return timer.endDate.getTime() > now;
+        }),
+        toArray(),
+        map((timers) => {
+          this.timer = new Set(timers);
+          return this.timer;
         })
-        this.timer = new Set(timers);
-      } catch(e) {
-        this.timer = new Set();
-      }
+      )
+    } catch(e) {
+      this.timer = new Set();
     }
 
     return of(this.timer);

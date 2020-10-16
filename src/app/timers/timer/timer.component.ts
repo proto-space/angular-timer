@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { interval, Observable } from 'rxjs';
-import { map, startWith } from 'rxjs/operators';
+import { delay, map, startWith } from 'rxjs/operators';
 import { Timer } from 'src/app/interfaces/timer';
 
 @Component({
@@ -12,15 +12,16 @@ export class TimerComponent implements OnInit {
 
   @Input() timer: Timer;
 
+  timerDuration$:  Observable<number>;
+
   constructor() { }
 
   ngOnInit(): void {
+    this.timerDuration$ = interval(1000).pipe(
+      startWith(0),
+      // delay(0),
+      map(() => this.timer.endDate.getTime() - Date.now())
+    );
   }
 
-  get timerDuration$(): Observable<number> {
-    return interval(1000).pipe(
-      startWith(0),
-      map(() => this.timer.endDate.getTime() - Date.now())
-    )
-  }
 }
