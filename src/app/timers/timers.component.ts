@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { mergeMap, toArray } from 'rxjs/operators';
+import { Timer } from '../interfaces/timer';
+import { TimerService } from '../services/timer.service';
 
 @Component({
   selector: 'app-timers',
@@ -7,7 +11,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TimersComponent implements OnInit {
 
-  constructor() { }
+  timers$: Observable<Timer[]>
+
+  constructor(private timerService: TimerService) {
+    this.timers$ = timerService.onTimersChanged$.pipe(
+      mergeMap(timers$ => {
+        return timers$.pipe(
+          toArray()
+        )
+      })
+    );
+  }
 
   ngOnInit(): void {
   }

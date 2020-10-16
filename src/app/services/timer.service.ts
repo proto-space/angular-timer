@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { from, Observable, Subject } from 'rxjs';
-import { combineAll, exhaustMap, map, startWith, toArray } from 'rxjs/operators';
+import { from, Observable, of, Subject,  } from 'rxjs';
+import { combineAll, exhaustMap, map, startWith, toArray, mergeMap } from 'rxjs/operators';
 import { Timer } from '../interfaces/timer';
 import { StorageService } from './storage.service';
 
@@ -16,42 +16,55 @@ export class TimerService {
   private timersChanged = new Subject<void>();
 
   public constructor(private storageService: StorageService) {
-    this.timersChanged.asObservable().pipe( toArray() ).subscribe(this.storeTimers)
+    this.timersChanged.asObservable().subscribe(this.storeTimer)
   }
 
-  public storeTimers(timer: Timer[]): void {
-
+  protected storeTimer = () => {
+    this.storageService.set(TimerService.TIMER_STORAGE_KEY, Array.from(this.timer));
   }
 
-  public ensureTimers(): Observable<void> {
-    if (this.timer === null) {
-      this.timer = new Set(this.storageService.get(TimerService.TIMER_STORAGE_KEY));
+  public ensureTimer(): Observable<Set<Timer>> {
+    if (!this.timer) {
+      try {
+        this.timer = new Set(this.storageService.get(TimerService.TIMER_STORAGE_KEY));
+      } catch(e) {
+        this.timer = new Set();
+      }
     }
+
+    return of(this.timer);
   }
 
-  public storeTimers() {
-
+  public getTimer() {
+    return this.timer;
   }
 
-  public getTimers(): Observable<Timer> {
-    
-    return from(this.timer);
+  public getTimer$(): Observable<Timer> {
+    return this.ensureTimer().pipe(
+      mergeMap(timerSet => {
+        return from(Array.from(timerSet));
+      })
+    );
   }
 
   public addTimer(timer: Timer): void {
-    this.timer.add(timer);
-    this.timersChanged.next();
+    this.ensureTimer().subscribe(timerSet => {
+      timerSet.add(timer);
+      this.timersChanged.next();
+    });
   }
 
   public removeTimer(timer: Timer): void {
-    this.timer.delete(timer);
-    this.timersChanged.next();
+    this.ensureTimer().subscribe(timerSet => {
+      timerSet.delete(timer);
+      this.timersChanged.next();
+    });
   }
 
   get onTimersChanged$(): Observable<Observable<Timer>> {
     return this.timersChanged.asObservable().pipe(
-      startWith(),
-      map(() => this.getTimers())
+      startWith(0),
+      map(() => this.getTimer$())
     )
   }
 
