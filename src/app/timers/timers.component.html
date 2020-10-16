@@ -1,15 +1,7 @@
-<div>
-  <!-- <div *ngFor="let timer of timers$; index as i">
-    {{ i + 1 }}. TIMER
-  </div>  -->
+<!-- <div>
 
-  <div>Add Timer</div>
-  <div *ngIf="timers$ | async as timers">
-    <p>{{ timers.length }} timers!</p>
-    <ul>
-      <li *ngFor="let pizza of timers; index as i">
-        {{ i + 1 }}. {{ pizza.description }}
-      </li>
-    </ul>
-  </div>
-</div>
+  <div>Add Timer</div> -->
+  <ng-container *ngIf="timers$ | async as timers">
+    <app-timer *ngFor="let timer of timers;" [timer]="timer"></app-timer>
+  </ng-container>
+<!-- </div> -->

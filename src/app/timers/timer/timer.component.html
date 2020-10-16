@@ -1,1 +1,15 @@
-<p>timer works!</p>
+<mat-card>
+  <div fxLayout="row" fxLayoutAlign="start" class="header">
+    <div fxFlex="100%" fxLayout="column" fxLayoutAlign="start stretch">
+      <mat-card-title>{{timer.endDate | datetime}}</mat-card-title>
+      <mat-card-subtitle>{{timerDuration$ | async }}</mat-card-subtitle>
+    </div>
+    <div fxLayoutAlign="end" class="actions">
+      <!-- <button mat-icon-button><mat-icon>menu</mat-icon></button> -->
+      <button mat-icon-button><mat-icon>clear</mat-icon></button>
+    </div>
+  </div>
+  <mat-card-content>
+    <div class="date">{{timer.description}}</div>
+  </mat-card-content>
+</mat-card>

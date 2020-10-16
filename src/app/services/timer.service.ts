@@ -26,7 +26,11 @@ export class TimerService {
   public ensureTimer(): Observable<Set<Timer>> {
     if (!this.timer) {
       try {
-        this.timer = new Set(this.storageService.get(TimerService.TIMER_STORAGE_KEY));
+        const timers = this.storageService.get(TimerService.TIMER_STORAGE_KEY) as Timer[];
+        timers.forEach(timer => {
+          timer.endDate = new Date(timer.endDate);
+        })
+        this.timer = new Set(timers);
       } catch(e) {
         this.timer = new Set();
       }

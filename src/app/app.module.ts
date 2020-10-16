@@ -1,22 +1,31 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ClockComponent } from './clock/clock.component';
 import { TimersComponent } from './timers/timers.component';
 import { TimerComponent } from './timers/timer/timer.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { MaterialModule } from './material.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { DatetimePipe } from './pipes/datetime.pipe';
+import { DurationPipe } from './pipes/duration.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     ClockComponent,
     TimersComponent,
-    TimerComponent
+    TimerComponent,
+    DatetimePipe,
+    DurationPipe
   ],
   imports: [
+    FlexLayoutModule,
+    MaterialModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
