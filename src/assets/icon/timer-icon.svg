@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="60mm"
+   height="60mm"
+   viewBox="0 0 60 60"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="timer-icon.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="449.01662"
+     inkscape:cy="226.66188"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g823"
+     showgrid="false"
+     showguides="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-237)">
+    <g
+       id="g823"
+       transform="matrix(0.26458333,0,0,0.26458333,-3.0729163,232.60417)">
+	<polygon
+   id="polygon817"
+   points="125,230 203.9,186.3 218.1,63.2 125,30 31.9,63.2 46.1,186.3 "
+   class="st0"
+   style="fill:#e91e63;fill-opacity:1"
+   transform="translate(1.8897637e-7,8)"
+   inkscape:export-filename="C:\Users\kevin\Pictures\timer\timer_64.png"
+   inkscape:export-xdpi="33.119999"
+   inkscape:export-ydpi="33.119999" />
+
+	<polygon
+   id="polygon819"
+   points="125,52.2 125,52.1 125,153.4 125,230 203.9,186.3 218.1,63.2 125,30 "
+   class="st1"
+   style="fill:#c0134e;fill-opacity:1"
+   transform="translate(0,8)"
+   inkscape:export-filename="C:\Users\kevin\Pictures\timer\timer_64.png"
+   inkscape:export-xdpi="33.119999"
+   inkscape:export-ydpi="33.119999" />
+
+	
+<circle
+   style="opacity:1;fill:#424242;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.83464575;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+   id="path1397"
+   cx="125"
+   cy="138"
+   r="11.338583"
+   inkscape:export-filename="C:\Users\kevin\Pictures\timer\timer_64.png"
+   inkscape:export-xdpi="33.119999"
+   inkscape:export-ydpi="33.119999" />
+<path
+   style="opacity:1;fill:#424242;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.6725297;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+   d="m 137.43253,130.44033 a 11.338583,11.338583 0 0 1 2.90625,7.56055 11.338583,11.338583 0 0 1 -2.9043,7.55859 h 60.25781 c 4.18772,0 7.56055,-3.37087 7.56055,-7.55859 0,-4.18772 -3.37283,-7.56055 -7.56055,-7.56055 z"
+   id="rect1399"
+   inkscape:connector-curvature="0"
+   inkscape:export-filename="C:\Users\kevin\Pictures\timer\timer_64.png"
+   inkscape:export-xdpi="33.119999"
+   inkscape:export-ydpi="33.119999" />
+<path
+   inkscape:connector-curvature="0"
+   id="path1410"
+   d="m 122.75416,151.68917 a 11.338583,11.338583 0 0 1 -7.59133,-2.82486 11.338583,11.338583 0 0 1 -3.74443,-7.17959 l -39.878852,45.1739 c -2.77145,3.13944 -2.476538,7.89882 0.662899,10.67027 3.139437,2.77145 7.900122,2.47507 10.671569,-0.66437 z"
+   style="opacity:1;fill:#424242;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.6725297;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+   inkscape:export-filename="C:\Users\kevin\Pictures\timer\timer_64.png"
+   inkscape:export-xdpi="33.119999"
+   inkscape:export-ydpi="33.119999" />
+</g>
+  </g>
+  <style
+     id="style815"
+     type="text/css">
+	.st0{fill:#DD0031;}
+	.st1{fill:#C3002F;}
+	.st2{fill:#FFFFFF;}
+</style>
+</svg>
