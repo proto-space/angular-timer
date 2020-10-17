@@ -2,6 +2,6 @@
 
   <div>Add Timer</div> -->
   <ng-container *ngIf="timers$ | async as timers">
-    <app-timer *ngFor="let timer of timers;" [timer]="timer"></app-timer>
+    <app-timer *ngFor="let timer of timers;" [timer]="timer" (remove)="onTimerRemove(timer)"></app-timer>
   </ng-container>
 <!-- </div> -->

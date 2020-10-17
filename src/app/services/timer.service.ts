@@ -35,7 +35,7 @@ export class TimerService {
       const now = Date.now();
       const timers = this.storageService.get(TimerService.TIMER_STORAGE_KEY) as Timer[];
     
-      return from(timers).pipe(
+      return from(timers || []).pipe(
         startWith({
           description: "Wichtiges TODO",
           endDate: (function() {

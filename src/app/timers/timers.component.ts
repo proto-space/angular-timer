@@ -26,4 +26,8 @@ export class TimersComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onTimerRemove(timer: Timer) {
+    this.timerService.removeTimer(timer);
+  }
+
 }
