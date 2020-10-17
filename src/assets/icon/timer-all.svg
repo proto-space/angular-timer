@@ -15,7 +15,7 @@
    version="1.1"
    id="svg8"
    sodipodi:docname="timer-all.svg"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+   inkscape:version="0.91 r13725">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -26,10 +26,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
-     inkscape:cx="449.01662"
+     inkscape:cx="210.33536"
      inkscape:cy="226.66188"
      inkscape:document-units="mm"
-     inkscape:current-layer="g823"
+     inkscape:current-layer="text1414"
      showgrid="false"
      showguides="true"
      inkscape:window-width="1920"
@@ -45,7 +45,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -57,64 +57,74 @@
     <g
        id="g823"
        transform="matrix(0.26458333,0,0,0.26458333,-3.0729163,232.60417)">
-	<polygon
-   id="polygon817"
-   points="218.1,63.2 125,30 31.9,63.2 46.1,186.3 125,230 203.9,186.3 "
-   class="st0"
-   style="fill:#e91e63;fill-opacity:1"
-   transform="translate(1.8897637e-7,8)"
-   inkscape:export-filename="C:\Users\kevin\Pictures\timer\timer_64.png"
-   inkscape:export-xdpi="33.119999"
-   inkscape:export-ydpi="33.119999" />
-
-	<polygon
-   id="polygon819"
-   points="125,52.1 125,153.4 125,230 203.9,186.3 218.1,63.2 125,30 125,52.2 "
-   class="st1"
-   style="fill:#c0134e;fill-opacity:1"
-   transform="translate(0,8)"
-   inkscape:export-filename="C:\Users\kevin\Pictures\timer\timer_64.png"
-   inkscape:export-xdpi="33.119999"
-   inkscape:export-ydpi="33.119999" />
-
-	
-<circle
-   style="opacity:1;fill:#424242;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.83464575;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-   id="path1397"
-   cx="125"
-   cy="138"
-   r="11.338583"
-   inkscape:export-filename="C:\Users\kevin\Pictures\timer\timer_64.png"
-   inkscape:export-xdpi="33.119999"
-   inkscape:export-ydpi="33.119999" />
-<path
-   style="opacity:1;fill:#424242;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.6725297;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-   d="m 137.43253,130.44033 a 11.338583,11.338583 0 0 1 2.90625,7.56055 11.338583,11.338583 0 0 1 -2.9043,7.55859 h 60.25781 c 4.18772,0 7.56055,-3.37087 7.56055,-7.55859 0,-4.18772 -3.37283,-7.56055 -7.56055,-7.56055 z"
-   id="rect1399"
-   inkscape:connector-curvature="0"
-   inkscape:export-filename="C:\Users\kevin\Pictures\timer\timer_64.png"
-   inkscape:export-xdpi="33.119999"
-   inkscape:export-ydpi="33.119999" />
-<path
-   inkscape:connector-curvature="0"
-   id="path1410"
-   d="m 122.75416,151.68917 a 11.338583,11.338583 0 0 1 -7.59133,-2.82486 11.338583,11.338583 0 0 1 -3.74443,-7.17959 l -39.878852,45.1739 c -2.77145,3.13944 -2.476538,7.89882 0.662899,10.67027 3.139437,2.77145 7.900122,2.47507 10.671569,-0.66437 z"
-   style="opacity:1;fill:#424242;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.6725297;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-   inkscape:export-filename="C:\Users\kevin\Pictures\timer\timer_64.png"
-   inkscape:export-xdpi="33.119999"
-   inkscape:export-ydpi="33.119999" />
-<text
-   xml:space="preserve"
-   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'a Aha Wow';-inkscape-font-specification:'a Aha Wow Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#424242;fill-opacity:1;stroke:none;"
-   x="215.70558"
-   y="205.40625"
-   id="text1414"><tspan
-     sodipodi:role="line"
-     id="tspan1412"
-     x="215.70558"
-     y="205.40625"
-     style="font-size:192px;fill:#424242;fill-opacity:1;">TIMER</tspan></text>
-</g>
+      <polygon
+         id="polygon817"
+         points="218.1,63.2 125,30 31.9,63.2 46.1,186.3 125,230 203.9,186.3 "
+         class="st0"
+         style="fill:#e91e63;fill-opacity:1"
+         transform="translate(1.8897637e-7,8)"
+         inkscape:export-filename="C:\Users\kevin\Pictures\timer\timer_64.png"
+         inkscape:export-xdpi="33.119999"
+         inkscape:export-ydpi="33.119999" />
+      <polygon
+         id="polygon819"
+         points="125,52.1 125,153.4 125,230 203.9,186.3 218.1,63.2 125,30 125,52.2 "
+         class="st1"
+         style="fill:#c0134e;fill-opacity:1"
+         transform="translate(0,8)"
+         inkscape:export-filename="C:\Users\kevin\Pictures\timer\timer_64.png"
+         inkscape:export-xdpi="33.119999"
+         inkscape:export-ydpi="33.119999" />
+      <circle
+         style="opacity:1;fill:#424242;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.83464575;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="path1397"
+         cx="125"
+         cy="138"
+         r="11.338583"
+         inkscape:export-filename="C:\Users\kevin\Pictures\timer\timer_64.png"
+         inkscape:export-xdpi="33.119999"
+         inkscape:export-ydpi="33.119999" />
+      <path
+         style="opacity:1;fill:#424242;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.6725297;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         d="m 137.43253,130.44033 a 11.338583,11.338583 0 0 1 2.90625,7.56055 11.338583,11.338583 0 0 1 -2.9043,7.55859 h 60.25781 c 4.18772,0 7.56055,-3.37087 7.56055,-7.55859 0,-4.18772 -3.37283,-7.56055 -7.56055,-7.56055 z"
+         id="rect1399"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="C:\Users\kevin\Pictures\timer\timer_64.png"
+         inkscape:export-xdpi="33.119999"
+         inkscape:export-ydpi="33.119999" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path1410"
+         d="m 122.75416,151.68917 a 11.338583,11.338583 0 0 1 -7.59133,-2.82486 11.338583,11.338583 0 0 1 -3.74443,-7.17959 l -39.878852,45.1739 c -2.77145,3.13944 -2.476538,7.89882 0.662899,10.67027 3.139437,2.77145 7.900122,2.47507 10.671569,-0.66437 z"
+         style="opacity:1;fill:#424242;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.6725297;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         inkscape:export-filename="C:\Users\kevin\Pictures\timer\timer_64.png"
+         inkscape:export-xdpi="33.119999"
+         inkscape:export-ydpi="33.119999" />
+      <g
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'a Aha Wow';-inkscape-font-specification:'a Aha Wow Italic';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#424242;fill-opacity:1;stroke:none"
+         id="text1414">
+        <path
+           d="m 296.89308,207.84375 -33.75,3.5625 14.0625,-118.6875 31.3125,-5.25 -64.6875,2.625 1.5,-20.625 121.875,-4.875 -1.5,20.625 -42,1.6875 -26.8125,120.9375 z"
+           style="font-size:192px;fill:#424242;fill-opacity:1"
+           id="path4143" />
+        <path
+           d="m 393.83058,211.40625 -32.625,-3.5625 15.9375,-128.25 46.875,-7.875 -30.1875,139.6875 z"
+           style="font-size:192px;fill:#424242;fill-opacity:1"
+           id="path4145" />
+        <path
+           d="m 461.70558,136.40625 -14.25,63.75 -34.3125,10.875 30.75,-144.5625 32.625,3.375 16.5,94.6875 54.1875,-92.8125 32.4375,3.5625 -15.75,128.25 -46.875,7.875 16.3125,-75.9375 -34.875,62.0625 -24.9375,0 -11.8125,-61.125 z"
+           style="font-size:192px;fill:#424242;fill-opacity:1"
+           id="path4147" />
+        <path
+           d="m 597.26808,85.21875 6.5625,-20.625 98.8125,4.875 -6.5625,20.625 -52.125,-2.625 -10.3125,47.0625 30.75,-2.625 -5.25,20.4375 -30.1875,2.8125 -7.3125,33.75 54.5625,-2.8125 -5.25,20.4375 -87.375,4.875 14.0625,-118.6875 34.5,-5.8125 -34.875,-1.6875 z"
+           style="font-size:192px;fill:#424242;fill-opacity:1"
+           id="path4149" />
+        <path
+           d="m 744.45558,141.28125 q 23.4375,-7.125 30.375,-19.5 1.5,-2.625 2.0625,-5.0625 2.25,-11.8125 -13.5,-20.625 -3.75,-2.0625 -8.0625,-3.75 l -10.875,48.9375 z m -34.6875,-56.0625 6.5625,-20.625 q 64.875,2.0625 92.8125,23.0625 16.6875,13.3125 13.6875,29.25 -3.375,17.4375 -29.4375,30.9375 -9.5625,4.875 -21.1875,8.625 l 43.125,37.125 -48.1875,17.8125 -30.375,-34.875 -6.9375,31.3125 -33.75,3.5625 14.0625,-118.6875 28.3125,-4.875 q -12.75,-2.25 -28.6875,-2.625 z"
+           style="font-size:192px;fill:#424242;fill-opacity:1"
+           id="path4151" />
+      </g>
+    </g>
   </g>
   <style
      id="style815"
