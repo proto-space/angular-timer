@@ -34,13 +34,14 @@ export class TimerService {
     try {
       const now = Date.now();
       const timers = this.storageService.get(TimerService.TIMER_STORAGE_KEY) as Timer[];
-    
+
       return from(timers || []).pipe(
         startWith({
           description: "Wichtiges TODO",
           endDate: (function() {
             const date = new Date();
             date.setDate(date.getDate() + 1);
+            date.setHours(date.getHours() + 1);
             return date;
           })()
         }),

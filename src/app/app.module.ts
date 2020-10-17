@@ -9,7 +9,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { MaterialModule } from './material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { DatetimePipe } from './pipes/datetime.pipe';
-import { DurationPipe } from './pipes/duration.pipe';
 import { DisplayTimeLeftPipe } from './pipes/display-time-left.pipe';
 
 @NgModule({
@@ -19,7 +18,6 @@ import { DisplayTimeLeftPipe } from './pipes/display-time-left.pipe';
     TimersComponent,
     TimerComponent,
     DatetimePipe,
-    DurationPipe,
     DisplayTimeLeftPipe
   ],
   imports: [

@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "angular-timer"
+  "defaultProject": "angular-timer",
+  "cli": {
+    "analytics": false
+  }
 }
