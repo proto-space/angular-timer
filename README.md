@@ -1,14 +1,14 @@
 <div align="center">
 	<p>
 		<a href="https://github.com/self-sample/angular-timer#you-are-awesome">
-			<img width="90%" src="https://raw.githubusercontent.com/self-sample/angular-timer/master/src/assets/icon/timer-all.svg?sanitize=true"/>
+			<img width="90%" src="https://raw.githubusercontent.com/self-sample/angular-timer/main/src/assets/icon/timer-all.svg?sanitize=true"/>
 		</a>
 	</p>
 	<p>
 		<a href="https://github.com/self-sample/angular-timer/issues">
 			<img src="https://img.shields.io/github/issues/self-sample/angular-timer.svg" alt="Issues"/>
 		</a>
-		<a href="https://github.com/self-sample/angular-timer/blob/master/LICENSE" alt="License">
+		<a href="https://github.com/self-sample/angular-timer/blob/main/LICENSE" alt="License">
 			<img src="https://img.shields.io/github/license/self-sample/angular-timer.svg"/>
 		</a>
 	</p>
