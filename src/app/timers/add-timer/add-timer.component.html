@@ -1,0 +1,21 @@
+<div style="margin: 10px;">
+    <mat-form-field style="margin-right: 10px;">
+        <input matInput [ngxMatDatetimePicker]="picker" [(ngModel)]="endDate" placeholder="Choose a date" 
+            [disabled]="false">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <ngx-mat-datetime-picker #picker [showSpinners]="true" 
+           [touchUi]="true"  >
+        </ngx-mat-datetime-picker>
+     </mat-form-field>
+
+  <mat-form-field appearance="legacy" style="margin-right: 10px;">
+    <mat-label>Description</mat-label>
+    <input matInput [(ngModel)]="description" placeholder="Description">
+  </mat-form-field>
+
+  
+
+ 
+
+<button mat-button (click)="add()">Add</button>
+</div>

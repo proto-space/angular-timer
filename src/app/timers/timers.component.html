@@ -4,4 +4,6 @@
   <ng-container *ngIf="timers$ | async as timers">
     <app-timer *ngFor="let timer of timers;" [timer]="timer" (remove)="onTimerRemove(timer)"></app-timer>
   </ng-container>
+
+  <app-add-timer></app-add-timer>
 <!-- </div> -->
