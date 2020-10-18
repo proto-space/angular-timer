@@ -10,9 +10,12 @@ import { MaterialModule } from './material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { DatetimePipe } from './pipes/datetime.pipe';
 import { DisplayTimeLeftPipe } from './pipes/display-time-left.pipe';
+import { AddTimerComponent } from './timers/add-timer/add-timer.component';
 
 @NgModule({
   declarations: [
+
+    AddTimerComponent,
     AppComponent,
     ClockComponent,
     TimersComponent,
