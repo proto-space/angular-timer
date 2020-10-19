@@ -18,7 +18,8 @@ export class AddTimerComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-
+    this.endDate = new Date();
+    this.endDate.setHours(this.endDate.getHours() + 1);
   }
 
   add() {
@@ -38,4 +39,12 @@ export class AddTimerComponent implements OnInit {
 
   }
 
+  onDateChange(data) {
+    var date = '';
+    debugger;
+  }
+
+  onTimeChange(data) {
+    debugger;
+  }
 }

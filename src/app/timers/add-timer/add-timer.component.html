@@ -1,12 +1,30 @@
-<mat-card >
-	<mat-form-field style="margin-right: 10px;">
-		<input matInput  placeholder="Choose a date" [disabled]="false" #picker>
-		<mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-	</mat-form-field>
+<mat-card>
 
-	<mat-form-field appearance="legacy" style="margin-right: 10px;">
+	<table cellspacing="0" class="full-width">
+		<tr>
+			<td>
+				<mat-form-field class="full-width">
+					<mat-label>Date</mat-label>
+					<input matInput [matDatepicker]="datePicker" [ngModel]="endDate" (input)="onDateChange($event)">
+					<mat-datepicker-toggle matSuffix [for]="datePicker"></mat-datepicker-toggle>
+					<mat-datepicker #datePicker></mat-datepicker>
+				</mat-form-field>
+			</td>
+			<td>
+				<mat-form-field class="full-width datetime">
+					<mat-label>Time</mat-label>
+					<input matInput type="time" [value]="endDate.getHours() + ':' + endDate.getMinutes()" (input)="onTimeChange($event)">
+					<!-- <ngx-material-timepicker #timePicker></ngx-material-timepicker> -->
+				</mat-form-field>
+			</td>
+		</tr>
+	</table>
+
+	<mat-form-field>
 		<mat-label>Description</mat-label>
-		<input matInput placeholder="Description">
+		<textarea matInput placeholder="Description..."></textarea>
 	</mat-form-field>
-	<button mat-button (click)="add()">Add</button>
+	<mat-card-actions>
+		<button mat-button (click)="add()">Add</button>
+	</mat-card-actions>
 </mat-card>
