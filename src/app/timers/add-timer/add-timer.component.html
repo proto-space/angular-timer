@@ -3,9 +3,9 @@
 	<table cellspacing="0" class="full-width">
 		<tr>
 			<td>
-				<mat-form-field class="full-width">
+				<mat-form-field class="full-width"  >
 					<mat-label>Date</mat-label>
-					<input matInput [matDatepicker]="datePicker" [ngModel]="endDate" (input)="onDateChange($event)">
+					<input matInput [matDatepicker]="datePicker" [value]="endDate" (dateChange)="onDateChange($event)">
 					<mat-datepicker-toggle matSuffix [for]="datePicker"></mat-datepicker-toggle>
 					<mat-datepicker #datePicker></mat-datepicker>
 				</mat-form-field>
@@ -13,7 +13,7 @@
 			<td>
 				<mat-form-field class="full-width datetime">
 					<mat-label>Time</mat-label>
-					<input matInput type="time" [value]="endDate.getHours() + ':' + endDate.getMinutes()" (input)="onTimeChange($event)">
+					<input matInput type="time" [value]="endDate | date:'HH:mm'" (input)="onTimeChange($event)">
 					<!-- <ngx-material-timepicker #timePicker></ngx-material-timepicker> -->
 				</mat-form-field>
 			</td>
@@ -22,7 +22,7 @@
 
 	<mat-form-field>
 		<mat-label>Description</mat-label>
-		<textarea matInput placeholder="Description..."></textarea>
+		<textarea matInput placeholder="Description..." [(ngModel)]="description"></textarea>
 	</mat-form-field>
 	<mat-card-actions>
 		<button mat-button (click)="add()">Add</button>

@@ -9,7 +9,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
   styleUrls: ['./add-timer.component.scss']
 })
 export class AddTimerComponent implements OnInit {
-  endDate: Date;
+  endDate: Date = new Date();
   description: string;
 
   constructor(
@@ -18,33 +18,45 @@ export class AddTimerComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.endDate = new Date();
-    this.endDate.setHours(this.endDate.getHours() + 1);
+    this.clear();
   }
 
   add() {
     let timer = {
       description: this.description,
-      endDate: this.endDate['_d']
+      endDate: this.endDate
     };
-    let now = new Date();
-    if (this.endDate['_d'] <= now) {
-      this._snackBar.open('timer not accepted', 'ok', {
+
+    if (this.endDate.getTime() <= Date.now()) {
+      return this._snackBar.open('Timer not accepted', 'ok', {
         duration: 5000,
       });
     }
-    else {
-      this.timerService.addTimer(timer);
-    }
+    
 
+    this.timerService.addTimer(timer);
+    this.clear();
   }
 
-  onDateChange(data) {
-    var date = '';
-    debugger;
+  onDateChange(event) {
+    const date: Date = event.value;
+    this.endDate.setFullYear(date.getFullYear());
+    this.endDate.setMonth(date.getMonth());
+    this.endDate.setDate(date.getDate());
   }
 
-  onTimeChange(data) {
-    debugger;
+  onTimeChange(event) {
+    const value = event.target.value;
+    const [hours, minutes] = value.split(":");
+
+    this.endDate.setHours(hours);
+    this.endDate.setMinutes(minutes);
+  }
+
+  clear() {
+    this.endDate = new Date();
+    this.endDate.setHours(this.endDate.getHours() + 1);
+    this.endDate.setSeconds(0);
+    this.description = "";
   }
 }
