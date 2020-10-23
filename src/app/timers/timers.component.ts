@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { mergeMap, toArray } from 'rxjs/operators';
+import { map, mergeMap, toArray } from 'rxjs/operators';
 import { Timer } from '../interfaces/timer';
 import { TimerService } from '../services/timer.service';
 
@@ -17,7 +17,12 @@ export class TimersComponent implements OnInit {
     this.timers$ = timerService.onTimersChanged$.pipe(
       mergeMap(timers$ => {
         return timers$.pipe(
-          toArray()
+          toArray(),
+          map(timerArray => {
+            return timerArray.sort((a, b) => {
+              return a.endDate.getTime() - b.endDate.getTime();
+            })
+          })
         )
       })
     );

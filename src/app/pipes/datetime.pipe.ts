@@ -19,10 +19,11 @@ export class DatetimePipe implements PipeTransform {
     "November",
     "December"
   ];
-
+  
+  
   transform(date: Date | string): string {
     date = this.ensureDate(date);
-
+    
     let dateString;
     if (this.isToday(date)) {
       dateString = "Today";
@@ -31,8 +32,12 @@ export class DatetimePipe implements PipeTransform {
     } else {
       dateString = `${date.getDate()}. ${this.getMonthName(date)}`;
     }
-
-    return `${date.getHours()}:${date.getMinutes()}, ${dateString}`;
+    
+    return `${date.getHours()}:${this.pad(date.getMinutes())}, ${dateString}`;
+  }
+  
+  protected pad(timeUnit: number): string {
+    return timeUnit < 10 ? '0' + timeUnit : '' + timeUnit;
   }
 
   protected isToday(date: Date) {
