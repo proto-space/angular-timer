@@ -1,4 +1,7 @@
 #angular-timer-title {
   width: 100%;
   filter: drop-shadow(2px 4px 6px #5f132d);
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-app-region: no-drag;
 }
